@@ -1,0 +1,100 @@
+/* 侧边栏样式 */
+aside {
+    position: fixed;
+    top: 75px;
+    left: 100px;
+    font-size: 20px;
+    width: 200px;
+    .avatar {
+        position: absolute;
+        width: 128px;
+        height: 128px;
+        left:16%;
+        border-radius: 50%;
+        border: 1px solid #bce2e8;
+        background-color: #bce2e8;
+        padding: 4px;
+        img{
+            display: inline-block;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    .neck {
+        margin-top: 75px;
+        padding: 75px 16px 16px 16px;
+        background-color: #eaf4fc;
+        border-radius: 10px;
+        text-align: center;
+        color: #595857;
+        .intro{
+            a{
+                font:{
+                    weight: bold;
+                    size:1.5em;
+                }
+                &:link,&:visited{
+                    color:#595857;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            small,a{
+                display: block;
+            }
+            address{
+                a{
+                    display: inline-block;
+                }
+            }
+        }
+        nav {
+            margin:10px 20px;
+            ul {
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                li {
+                    list-style: none;
+                    -webkit-transition: 0.2s ease;
+                    transition: 0.2s ease;
+                    margin:10px 0;
+                    background-color: #e9e7ef;
+                    border-radius: 5px;
+                    width: 128px;
+                    a {
+                        display: inline-block;
+                        padding: 10px 0;
+                        color: #ff8936;
+                        width: 100%;
+                        font-size: 0.75em;
+                        text-decoration: none;
+                        &:hover {
+                            box-shadow: 0 25px 25px -15px rgba(255,251,240,0.93) inset;
+                        }
+                        i {
+                            margin-right: 5px;
+                        }
+                        img{
+                            border:none;
+                            vertical-align: middle;
+                            margin:0 10px;
+                        }
+                    }
+                    >.active {
+                        color: #88ada6;
+                        box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width: 770px) {
+    aside {}
+}
+
+@media screen and (max-width: 770px) {
+    aside {}
+}

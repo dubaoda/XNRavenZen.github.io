@@ -1,0 +1,54 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+# 标题
+title: 码农之路
+# 简介
+brief-intro: A Fun-driven Dev Engineer
+# 邮箱
+email: 591120280@qq.com
+# 格言
+description: 用舍由时，行藏在我
+# 主页 the subpath of your site, e.g. /blog
+baseurl: "" 
+# 挂载于Github Page # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://XNRavenZen.github.io"
+# Github 
+github_username: XNRavenZen
+
+# 选择使用的主题
+i_theme: mountain-fisher
+# sass存放位置手动修改主题名字
+sass:
+    sass_dir: assets/themes/mountain-fisher/_sass
+    style: compressed
+# 以下三个路径使用时将'*v*'替换为主题名i_theme
+# 图片存放位置
+image_dir: /assets/themes/*v*/image/
+# css存放位置
+css_dir: /assets/themes/*v*/css/
+# js存放位置
+js_dir: /assets/themes/*v*/js/
+
+
+# markdown解析
+markdown: kramdown
+
+
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

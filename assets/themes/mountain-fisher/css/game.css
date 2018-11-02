@@ -1,0 +1,19 @@
+@charset"utf-8";
+
+.map{
+    width: 400px;
+    height: 630px;
+    border: 1px solid black;
+    margin: 2px auto;
+   /* cursor: none;*/
+    position: relative;
+    overflow: hidden;
+}
+.bgmap{
+    width: 400px;
+    height: 630px;
+    background: url("{{ " /resources/image/sky.png" | prepend: site.baseurl }}") 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+

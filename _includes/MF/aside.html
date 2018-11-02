@@ -1,0 +1,57 @@
+<aside id="flag">
+    <div class="avatar">
+        <img src="{{ site.image_dir | replace_first: '*v*',site.i_theme |append: 'avatar/husky_stuck-out_tongue.jpg' | prepend: site.baseurl }}" alt="">
+        <div class="avatar-img"></div>
+    </div>
+    <div class="neck">
+        <div class="intro">
+            <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
+            <small>{{site.description}}</small>
+            <address>
+                {% if site.github_username %}
+                <a href="{{site.github_username | prepend: 'https://github.com/'}}" target="_blank">
+                    <img src="{{ site.image_dir | replace_first: '*v*',site.i_theme |append: 'icon/github.png' | prepend: site.baseurl }}" alt="">
+                </a>
+                {% endif %}
+                {% if site.email %}
+                <a href="{{site.github_username | prepend: 'mailto:'}}" target="_blank">
+                    <img src="{{ site.image_dir | replace_first: '*v*',site.i_theme |append: 'icon/email.png' | prepend: site.baseurl }}" alt="">
+                </a>
+                {% endif %}
+            </address>
+        </div>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    {% if page.url == '/' %}
+                    <a class="active" href="{{site.baseurl}}/">
+                    {% else %}
+                    <a href="{{site.baseurl}}/">
+                    {% endif %}
+                        <img src="{{site.image_dir | replace_first:'*v*',site.i_theme | append: 'icon/home.png' | prepend: site.baseurl }}" alt="">Home
+                    </a>
+                </li>
+                {% for i_page in site.pages %}
+                {% if i_page.type == 'page' %}
+                <li>
+                    {% if i_page.url == page.url %}
+                    <a class="active" href="{{ i_page.url | prepend: site.baseurl }}">
+                    {% else %}
+                    <a href="{{ i_page.url | prepend: site.baseurl }}">
+                    {% endif %}
+                        <img src="{{site.image_dir | replace_first:'*v*',site.i_theme | append: 'icon/' | append: i_page.icon | append:'.png' | prepend: site.baseurl }}" alt="">{{ i_page.title }}
+                    </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                <li>
+                    <a href="{{ site.url }}/feed.xml" target="_blank">
+                        <img src="{{site.image_dir | replace_first:'*v*',site.i_theme | append: 'icon/rss.png' | prepend: site.baseurl }}" alt="">RSS订阅
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>

@@ -1,0 +1,44 @@
+---
+layout: base
+title: shootGame
+permalink: /shootGame/
+icon: game
+type: page
+---
+
+<style type="text/css" media="screen">
+    .map{
+        width: 400px;
+        height: 630px;
+        border: 1px solid black;
+        margin: 2px auto;
+       /* cursor: none;*/
+        position: relative;
+        overflow: hidden;
+    }
+    .bgmap{
+        width: 400px;
+        height: 630px;
+        background: url("{{ site.image_dir | replace_first: '*v*',site.i_theme |append: 'shootGame/sky.png' | prepend: site.baseurl }}")0 0 no-repeat;
+        background-size: 100%;
+        position: absolute;
+    }
+    #start{
+        position: absolute;
+        width: 150px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 auto;
+        bottom: 10%;
+        color: #000;
+        border-radius: 10px;
+        z-index: 999;
+    }
+</style>
+<div class="map">
+    <div id="start" data-image_dir="{{ site.image_dir | replace_first: '*v*',site.i_theme |append: 'shootGame/' | prepend: site.baseurl }}">开始游戏</div>
+    <div class="bgmap"></div>
+    <div class="bgmap"></div>
+</div>
+<script src="{{ site.js_dir | replace_first: '*v*',site.i_theme |append: 'jquery-1.4.2.min.js' | prepend: site.baseurl }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ site.js_dir | replace_first: '*v*',site.i_theme |append: 'shootGame.js' | prepend: site.baseurl }}" type="text/javascript" charset="utf-8"></script>
