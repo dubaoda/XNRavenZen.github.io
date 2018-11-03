@@ -1,1 +1,20 @@
-{% include themes/{{site.i_theme}}/base.html %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+        <link rel="stylesheet" href="{{ site.css_dir |append: 'main.css' | prepend: site.baseurl }}">
+        <link rel="icon" href="{{ site.image_dir |append: 'icon/husky.ico' | prepend: site.baseurl }}" type="image/x-icon">
+    </head>
+
+    <body>
+        {% include aside.html %}
+        <article>
+            {{ content }}
+        </article>
+        {% include footer.html %}
+        <script src="{{ site.js_dir |append: 'main.js' | prepend: site.baseurl }}" type="text/javascript" charset="utf-8"></script>
+    </body>
+
+</html>
