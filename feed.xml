@@ -2,7 +2,7 @@
 layout: none
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" title="XSL Formatting" href="{{ site.css_dir | replace: '*v*',site.i_theme | append: 'rss.xsl' | prepend: site.baseurl}}" media="all" ?>
+<?xml-stylesheet type="text/xsl" title="XSL Formatting" href="{{ site.css_dir | append: 'rss.xsl' | prepend: site.baseurl}}" media="all" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>{{ site.title }}</title>

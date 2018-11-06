@@ -31,7 +31,7 @@ aside {
             a{
                 font:{
                     weight: bold;
-                    size:1.5em;
+                    size:0.75em;
                 }
                 &:link,&:visited{
                     color:#595857;
@@ -39,12 +39,19 @@ aside {
                     cursor: pointer;
                 }
             }
+            small{
+                margin: 5px 0;
+            }
             small,a{
                 display: block;
             }
             address{
                 a{
                     display: inline-block;
+                    img{
+                        width : auto;
+                        height:auto;
+                    }
                 }
             }
         }
