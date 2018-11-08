@@ -10,9 +10,7 @@
 
     <body>
         {% include aside.html %}
-        <article>
-            {{ content }}
-        </article>
+        {{ content }}
         {% include footer.html %}
         <script src="{{ site.js_dir |append: 'main.js' | prepend: site.baseurl }}" type="text/javascript" charset="utf-8"></script>
     </body>
