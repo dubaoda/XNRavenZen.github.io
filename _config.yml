@@ -4,7 +4,7 @@ title: Test
 # 简介
 brief-intro: A Fun-driven Dev Engineer
 # 邮箱
-email: 591120280@qq.com
+email: 799479017@qq.com
 # 格言
 description: 用舍由时，行藏在我
 # 主页 the subpath of your site, e.g. /blog
@@ -12,7 +12,7 @@ baseurl: ""
 # 挂载于Github Page # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://XNRavenZen.github.io"
 # Github 
-github_username: XNRavenZen
+github_username: dubaoda
 
 # 图片存放位置
 image_dir: /assets/image/
